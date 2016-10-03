@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 1, 2016 3:43:03 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="YAY.model.Oda" table="oda" catalog="apart" optimistic-lock="version">
+        <id name="odaId" type="java.lang.Integer">
+            <column name="oda_id" />
+            <generator class="identity" />
+        </id>
+        <property name="odaAd" type="string">
+            <column name="oda_ad" length="150" />
+        </property>
+        <property name="katAd" type="int">
+            <column name="kat_ad" not-null="true" />
+        </property>
+        <property name="yatakAdet" type="java.lang.Integer">
+            <column name="yatak_adet" />
+        </property>
+    </class>
+</hibernate-mapping>

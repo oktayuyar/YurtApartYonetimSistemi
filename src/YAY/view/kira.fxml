@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anaPanel" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="910.0" style="-fx-background-color: white;" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="YAY.controller.kiraController">
+   <children>
+      <AnchorPane fx:id="paneTabel" layoutY="80.0" opacity="0.0" prefHeight="556.0" prefWidth="910.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TableView fx:id="tableData" layoutX="1.0" layoutY="46.0" onMouseClicked="#aksiKlikTableData" prefHeight="507.0" prefWidth="910.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="41.0">
+              <columns>
+                  <TableColumn fx:id="colAction" prefWidth="110.0" text="AYARLAR">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.39" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                <TableColumn fx:id="colmAdSoy" prefWidth="160.0" text="ADI SOYADI">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colAyUcret" prefWidth="145.0" text="AYLIK ÜCRET">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colKalSenet" prefWidth="175.0" text="TOPLAM/KALAN SENETLER">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colSenet" prefWidth="140.0" text="KALAN UCRET">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colTopUcret" prefWidth="155.0" text="TOPLAM UCRET">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colGiris" prefWidth="180.0" text="ÖDEME BAŞLANGIÇ">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+              </columns>
+            </TableView>
+            <TextField fx:id="ara" layoutX="733.0" layoutY="8.0" onKeyPressed="#ara" onKeyReleased="#arab" prefHeight="27.0" promptText="Ara..." styleClass="textFieldicon" />
+         </children>
+      </AnchorPane>
+      <Separator layoutY="63.0" prefHeight="3.0" prefWidth="910.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Text fill="#2b579a" layoutX="22.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiralar">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgLoad" fitHeight="33.0" fitWidth="40.0" layoutX="240.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/301.GIF" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="bar" layoutY="58.0" prefHeight="20.0" prefWidth="910.0" progress="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

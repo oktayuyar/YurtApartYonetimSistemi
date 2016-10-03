@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 1, 2016 3:43:03 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="YAY.model.Kira" table="kira" catalog="apart" optimistic-lock="version">
+        <id name="kiraId" type="java.lang.Integer">
+            <column name="kira_id" />
+            <generator class="identity" />
+        </id>
+        <property name="kiraUcret" type="java.lang.Integer">
+            <column name="kira_ucret" />
+        </property>
+        <property name="senetSayisi" type="java.lang.Integer">
+            <column name="senet_sayisi" />
+        </property>
+        <property name="kalanSenet" type="int">
+            <column name="kalanSenet" not-null="true" />
+        </property>
+        <property name="baslangicTarihi" type="date">
+            <column name="baslangic_tarihi" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

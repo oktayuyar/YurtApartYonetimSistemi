@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 1, 2016 3:43:03 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="YAY.model.Ogrenci" table="ogrenci" catalog="apart" optimistic-lock="version">
+        <id name="ogrenciId" type="java.lang.Integer">
+            <column name="ogrenci_id" />
+            <generator class="identity" />
+        </id>
+        <property name="ogrenciAd" type="string">
+            <column name="ogrenci_ad" length="250" />
+        </property>
+        <property name="yatakId" type="java.lang.Integer">
+            <column name="yatak_id" />
+        </property>
+        <property name="kiraId" type="java.lang.Integer">
+            <column name="kira_id" />
+        </property>
+        <property name="girisTarihi" type="date">
+            <column name="giris_tarihi" length="10" />
+        </property>
+        <property name="tel" type="string">
+            <column name="tel" length="50" not-null="true" />
+        </property>
+        <property name="tc" type="long">
+            <column name="tc" not-null="true" />
+        </property>
+        <property name="resim" type="string">
+            <column name="resim" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

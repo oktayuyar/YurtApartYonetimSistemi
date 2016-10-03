@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/apart</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">190323</property>
+    <mapping resource="YAY/model/Ogrenci.hbm.xml"/>
+    <mapping resource="YAY/model/Yonetici.hbm.xml"/>
+    <mapping resource="YAY/model/Oda.hbm.xml"/>
+    <mapping resource="YAY/model/Kira.hbm.xml"/>
+    <mapping resource="YAY/model/Ktarihler.hbm.xml"/>
+    <mapping resource="YAY/model/Yatak.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

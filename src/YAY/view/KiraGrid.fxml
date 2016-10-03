@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anaPanel2" minHeight="500.0" minWidth="600.0" onMouseDragged="#moveDragged" onMousePressed="#movePressed" style="-fx-background-color: white;" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="YAY.controller.KiraGrid" >
+   <children>
+      <GridPane fx:id="kok" alignment="CENTER" layoutY="40.0" minHeight="458.0" minWidth="600.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints fillHeight="false" minHeight="7.0" valignment="CENTER" vgrow="ALWAYS" />
+        </rowConstraints>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+      <HBox layoutX="367.0" stylesheets="@../css/winDec.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="close" mnemonicParsing="false" onAction="#aksiClose" pickOnBounds="true" prefHeight="30.0" prefWidth="33.0" styleClass="decoration-button-close" text="" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Button>
+         </children>
+      </HBox>
+      <Label id="TitleLabel" fx:id="title" alignment="CENTER" layoutY="3.0" mouseTransparent="true" prefHeight="23.0" prefWidth="450.0" textFill="#a1a1a1" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
