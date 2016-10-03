@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 1, 2016 3:43:03 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="YAY.model.Yonetici" table="yonetici" catalog="apart" optimistic-lock="version">
+        <id name="kid" type="java.lang.Integer">
+            <column name="kid" />
+            <generator class="identity" />
+        </id>
+        <property name="kadi" type="string">
+            <column name="kadi" length="100" not-null="true" />
+        </property>
+        <property name="sifre" type="string">
+            <column name="sifre" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

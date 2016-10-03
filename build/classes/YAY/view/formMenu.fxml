@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane fx:id="anaPanel" onMouseDragged="#moveDragged" onMousePressed="#movePressed" prefHeight="700.0" prefWidth="1070.0" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="YAY.controller.menu">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" pickOnBounds="false" prefHeight="700.0" prefWidth="1070.0" snapToPixel="true" style="-fx-border-color: #2b579a; -fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+          <Label id="TitleLabel" fx:id="title" alignment="CENTER" layoutX="2.0" layoutY="-3.0" mouseTransparent="true" prefHeight="38.0" prefWidth="738.0" text="Yurt Adı" textFill="#a1a1a1" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+          </Label>
+            <HBox layoutX="930.0" layoutY="2.0" stylesheets="@../css/winDec.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="minimize" mnemonicParsing="false" onAction="#aksiminimize" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="" styleClass="decoration-button-minimize" text="" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="maximize" mnemonicParsing="false" onAction="#aksiMaximized" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-maximize" text="" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="close" mnemonicParsing="false" onAction="#aksiClose" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-close" text="" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </Button>
+               </children>
+            </HBox>
+            <AnchorPane fx:id="alist" layoutX="1.0" layoutY="1.0" minWidth="-Infinity" prefHeight="704.0" prefWidth="137.0" style="-fx-background-color: #2b579a;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ListView fx:id="listkMenu" layoutY="91.0" onMouseClicked="#aksiKlikListkMenu" prefHeight="613.0" prefWidth="50.0" stylesheets="@../css/listView.css" />
+                  <ListView fx:id="listMenu" layoutX="-7.0" layoutY="91.0" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#aksiKlikListMenu" prefHeight="613.0" prefWidth="143.0" stylesheets="@../css/listView.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="91.0" />
+                  <Button fx:id="btnLogout" layoutX="7.0" layoutY="40.0" mnemonicParsing="false" onAction="#aksiLogout" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/buttonCircle.css">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/arrowLeft.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="side" layoutX="12.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sidea" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: #2b579a;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/side.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneData" layoutX="140.0" layoutY="47.0" maxWidth="-Infinity" prefHeight="657.0" prefWidth="924.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="46.0" />
+        </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

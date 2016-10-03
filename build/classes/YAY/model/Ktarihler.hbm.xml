@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 1, 2016 3:43:03 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="YAY.model.Ktarihler" table="ktarihler" catalog="apart" optimistic-lock="version">
+        <id name="tarihId" type="java.lang.Integer">
+            <column name="tarih_id" />
+            <generator class="identity" />
+        </id>
+        <property name="odemeTarihi" type="timestamp">
+            <column name="odeme_tarihi" length="19" not-null="true" />
+        </property>
+        <property name="kiraId" type="int">
+            <column name="kira_id" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

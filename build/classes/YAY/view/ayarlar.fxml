@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import YAY.style.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anaPanel" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="910.0" style="-fx-background-color: white;" stylesheets="@../css/Metro-UI.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="YAY.controller.ayarController">
+   <children>
+      <AnchorPane fx:id="degistirPanel" layoutY="80.0" opacity="0.0" prefHeight="556.0" prefWidth="910.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <PasswordField fx:id="sifreT" layoutX="367.5" layoutY="240.0" promptText="Yeni Şifre Tekrar" />
+            <PasswordField fx:id="sifre" layoutX="367.5" layoutY="200.0" promptText="Yeni Şifre" />
+            <PasswordField fx:id="eskisifre" layoutX="367.5" layoutY="160.0" promptText="Eski Şifre" />
+            <TextField fx:id="txtkad" disable="true" layoutX="367.5" layoutY="120.0" prefHeight="20.0" prefWidth="175.0" promptText="Kullanıcı Adı" />
+            <Button fx:id="degistir" layoutX="580.0" layoutY="300.0" mnemonicParsing="false" onAction="#degistir" styleClass="btn" text="Değiştir" />
+            <Button fx:id="btnBack1" layoutX="29.0" layoutY="13.0" mnemonicParsing="false" onAction="#aksiBack" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/buttonCircleBlack.css">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/arrowLeftBlack.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="eklePanel" layoutY="130.0" opacity="0.0" prefHeight="493.0" prefWidth="910.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <PasswordField fx:id="ysifreT" layoutX="367.5" layoutY="200.0" promptText="Şifre" />
+            <PasswordField fx:id="ysifre" layoutX="367.5" layoutY="240.0" promptText="Şifre Tekrar" />
+            <TextField fx:id="txtykad" layoutX="367.5" layoutY="160.0" prefHeight="20.0" prefWidth="175.0" promptText="Kullanıcı Adı" />
+            <Button fx:id="Ekle" layoutX="580.0" layoutY="300.0" mnemonicParsing="false" onAction="#Ekle" styleClass="btn" text="Ekle" />
+            <Button fx:id="btnBack" layoutX="29.0" layoutY="13.0" mnemonicParsing="false" onAction="#aksiBack" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/buttonCircleBlack.css">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/arrowLeftBlack.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+      <Separator layoutY="63.0" prefHeight="3.0" prefWidth="910.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Text fill="#2b579a" layoutX="12.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AYARLAR">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="bar" layoutY="58.0" prefHeight="20.0" prefWidth="910.0" progress="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <AnchorPane fx:id="panel" layoutX="10.0" layoutY="90.0" opacity="0.0" prefHeight="556.0" prefWidth="910.0">
+         <children>
+            <Button fx:id="btn1" layoutX="40.0" layoutY="225.0" mnemonicParsing="false" onAction="#sifreD" prefHeight="70.0" prefWidth="230.0" styleClass="btn" text="Şifre Değiştir" />
+            <Button fx:id="btn2" layoutX="340.0" layoutY="225.0" mnemonicParsing="false" onAction="#yeniK" prefHeight="70.0" prefWidth="230.0" styleClass="btn" text="Yeni Kullanıcı Ekle" />
+            <Button fx:id="btn3" layoutX="640.0" layoutY="225.0" mnemonicParsing="false" onAction="#kSil" prefHeight="70.0" prefWidth="230.0" styleClass="btn" text="Kullanıcı Sil" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="silPanel" layoutX="10.0" layoutY="140.0" opacity="0.0" prefHeight="493.0" prefWidth="910.0" style="-fx-background-color: white;">
+         <children>
+            <PasswordField fx:id="ssifre" layoutX="367.5" layoutY="225.0" prefWidth="200.0" promptText="Silinecek Kullanıcının Şifresi" />
+            <TextField fx:id="txtskad" layoutX="367.5" layoutY="175.0" prefHeight="20.0" prefWidth="200.0" promptText="Silinecek Kullanıcı Adı" />
+            <Button fx:id="sil" layoutX="580.0" layoutY="280.0" mnemonicParsing="false" onAction="#sil" styleClass="btn" text="Sil" />
+            <Button fx:id="btnBack2" layoutX="29.0" layoutY="13.0" mnemonicParsing="false" onAction="#aksiBack" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/buttonCircleBlack.css">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/arrowLeftBlack.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
